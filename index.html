@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>La Cocina — Restaurante</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="La Cocina logo" class="logo">
+        <h1>La Cocina</h1>
+      </div>
+      <nav class="nav">
+        <a href="#menu">Menú</a>
+        <a href="#about">Nosotros</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+      <button id="cart-btn" class="cart-btn">Carrito (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Comida casera, hecha con amor</h2>
+          <p>Explora nuestro menú y realiza tu pedido en línea. Envíos y recogida disponibles.</p>
+          <a href="#menu" class="btn primary">Ver menú</a>
+        </div>
+        <div class="hero-img">
+          <img src="assets/hero.svg" alt="Plato destacado">
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu container">
+      <h3>Menú</h3>
+      <p class="muted">Pulsa "Añadir" para enviar al carrito. Puedes revisar el carrito y confirmar tu pedido.</p>
+      <div class="menu-grid" id="menu-grid">
+        <!-- Items se inyectan via JavaScript -->
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>Sobre nosotros</h3>
+      <p>La Cocina es un restaurante familiar que ofrece platos tradicionales y opciones modernas. Ingredientes frescos y recetas caseras.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contacto</h3>
+      <p>Teléfono: <strong>+1 (555) 123-4567</strong></p>
+      <p>Dirección: Calle Falsa 123, Ciudad</p>
+      <form id="contact-form">
+        <label>Nombre<input type="text" id="contact-name" required></label>
+        <label>Mensaje<textarea id="contact-message" required></textarea></label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modal carrito -->
+  <div id="cart-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-cart" class="close">&times;</button>
+      <h4>Tu carrito</h4>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div>Total: <strong id="cart-total">0.00</strong> USD</div>
+        <button id="checkout-btn" class="btn primary">Confirmar pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© La Cocina — Hecho con ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
