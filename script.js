@@ -1,9 +1,9 @@
 
 const menu = [
-  {id:1, name:'Hamburguesa clásica', desc:'Carne 200g, lechuga, queso, salsa especial', price:8.50, img:'assets/dish1.svg'},
-  {id:2, name:'Pizza Margarita', desc:'Tomate, mozzarella, albahaca', price:9.75, img:'assets/dish2.svg'},
-  {id:3, name:'Ensalada mediterránea', desc:'Mix de hojas, oliva, queso feta', price:7.00, img:'assets/dish3.svg'},
-  {id:4, name:'Tacos al pastor', desc:'Tortilla de maíz, cerdo adobado, piña', price:6.50, img:'assets/dish4.svg'}
+  {id:1, name:'Hamburguesa clásica', desc:'Carne 200g, lechuga, queso, salsa especial', price:8.50, img:'assets/dish1.png'},
+  {id:2, name:'Pizza Margarita', desc:'Tomate, mozzarella, albahaca', price:9.75, img:'assets/dish2.png'},
+  {id:3, name:'Ensalada mediterránea', desc:'Mix de hojas, oliva, queso feta', price:7.00, img:'assets/dish3.png'},
+  {id:4, name:'Tacos al pastor', desc:'Tortilla de maíz, cerdo adobado, piña', price:6.50, img:'assets/dish4.png'}
 ];
 
 function $(sel){ return document.querySelector(sel); }
